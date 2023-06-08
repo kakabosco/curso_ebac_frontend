@@ -1,0 +1,103 @@
+* {
+    font-family: "Roboto Mono", monospace;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #57575c;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 56px;
+}
+
+#task-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    width: 75%;
+    padding: 10px;
+    background-color: #fafafa;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+#task-form button {
+    width: 23%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-form button:hover {
+    background-color: #0056b3;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #eee;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-list li:hover,
+#task-list li:hover .task-name {
+    background-color: #f4f4f4;
+}
+
+.task-name {
+    flex-grow: 1;
+    color: #57575c;
+}
+
+.completed-task .task-name {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: #fd6a6a;
+    padding: 5px 10px;
+    border-radius: 40%;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.delete-btn:hover {
+    background-color: #db5959;
+}
