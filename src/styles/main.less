@@ -1,0 +1,43 @@
+@mainFont: "Montserrat", sans-serif;
+@textColor: #F4F7F5;
+@backgroundColor: #242643;
+@buttonBackgroundColor: #B73D52;
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: @textColor;
+    background-color: @backgroundColor;
+}
+
+main {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: @buttonBackgroundColor;
+    color: @textColor;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(@buttonBackgroundColor, 15%);
+    }
+}
+
+#message {
+    padding: 16px;
+    margin-top: 40px;
+    border: 2px dashed @textColor;
+    border-radius: 12px;
+    font-style: italic;
+    display: none;
+}
